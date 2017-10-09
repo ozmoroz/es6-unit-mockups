@@ -1,0 +1,5 @@
+--require babel-register
+--recursive
+--require helpers/mocha.helpers.js
+--watch-extensions js,spec.js
+test/**/*.spec.js
