@@ -15,7 +15,7 @@ describe('import * from - a dependency in the same module', () => {
       .returns('This is mocked function2');
   });
 
-  it('function2 function should be called', () => {
+  it('function2 should be called', () => {
     console.log(function1());
     module2Mock.verify();
   });
