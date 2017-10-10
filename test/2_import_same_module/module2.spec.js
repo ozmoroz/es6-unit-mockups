@@ -1,14 +1,14 @@
 'use strict';
-import * as module1Module from './module1';
-import { function1 } from './module1';
+import * as module1 from './module2';
+import { function1 } from './module2';
 
 /* global beforeEach, describe, sinon */
 
-describe('module1', () => {
+describe.skip('import * from - a dependency in the same module', () => {
   let module1Mock;
 
   beforeEach(() => {
-    module1Mock = sinon.mock(module1Module);
+    module1Mock = sinon.mock(module1);
     module1Mock
       .expects('function2')
       .once()
