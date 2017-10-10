@@ -9,7 +9,9 @@
     "test:unit": "mocha --opts mocha.opts",
     "test:unit-watch": "npm run test:unit -- --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash.values": "^4.3.0"
+  },
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-preset-env": "^1.6.0",

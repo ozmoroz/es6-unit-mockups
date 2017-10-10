@@ -1,5 +1,5 @@
 export const function1 = () => {
-  return function2();
+  return exports.function2();
 };
 
 export const function2 = () => {

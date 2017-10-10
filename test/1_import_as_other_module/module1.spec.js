@@ -4,7 +4,7 @@ import * as export1 from './export1';
 
 /* global beforeEach, describe, sinon */
 
-describe.only('import * from - a dependency in another module', () => {
+describe('import * from - a dependency in another module', () => {
   let export1Mock;
 
   beforeEach(() => {

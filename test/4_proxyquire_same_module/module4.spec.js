@@ -8,7 +8,7 @@ describe.skip('proxyquire - a dependency in the same module', () => {
   let mock;
 
   beforeEach(() => {
-    module1 = proxyquire('./module1');
+    module1 = proxyquire('./module2');
 
     mock = sinon.mock(module1);
     mock
