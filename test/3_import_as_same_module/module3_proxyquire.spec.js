@@ -3,14 +3,14 @@ const proxyquire = require('proxyquire').noCallThru();
 
 /* global beforeEach, describe, sinon */
 
-describe.skip('proxyquire - a dependency in the same module', () => {
-  let module1;
+describe('proxyquire - a dependency in the same module', () => {
+  let module3
   let mock;
 
   beforeEach(() => {
-    module1 = proxyquire('./module2');
+    module3 = proxyquire('./module3');
 
-    mock = sinon.mock(module1);
+    mock = sinon.mock(module3);
     mock
       .expects('function2')
       .once()
@@ -18,7 +18,7 @@ describe.skip('proxyquire - a dependency in the same module', () => {
   });
 
   it('function2 function should be called', () => {
-    module1.function1();
+    module3.function1();
     mock.verify();
   });
 
